@@ -8,7 +8,7 @@ class Tests(unittest.TestCase):
         edges = [["v1", "v2"]]
 
         self.assertTrue(is_two_colorable(edges))
-    
+
     def test_path_graph(self) -> None:
         edges = [["v1", "v2"], ["v2", "v3"], ["v3", "v4"]]
 
