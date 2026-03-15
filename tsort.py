@@ -33,6 +33,6 @@ def tsort(edge_list: list[list[str]]) -> list[str]:
 
 
     if len(result) != len(verticies):
-        raise ValueError("Input contains a cycle")
+        raise ValueError("input contains a cycle")
 
     return result
