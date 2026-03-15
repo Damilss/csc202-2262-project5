@@ -2,10 +2,12 @@ from collections import defaultdict, deque
 
 
 def is_two_colorable(edge_list: list[list[str]]) -> bool:
+    """an assignment of colors, one color to each vertex, 
+    such that no two adjacent vertices havethe same color"""
     graph = defaultdict(list)
     vertices = set()
 
-    # Build undirected adjacency list
+    # build undirected adjacency list
     for u, v in edge_list:
         graph[u].append(v)
         graph[v].append(u)
