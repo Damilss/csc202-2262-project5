@@ -2,7 +2,7 @@ from collections import defaultdict, deque
 
 
 def is_two_colorable(edge_list: list[list[str]]) -> bool:
-    """an assignment of colors, one color to each vertex, 
+    """An assignment of colors, one color to each vertex,
     such that no two adjacent vertices havethe same color"""
     graph = defaultdict(list)
     vertices = set()
