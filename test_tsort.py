@@ -22,7 +22,7 @@ class Tests(unittest.TestCase):
 
         self.check_valid_tsort(edges, tsort(edges))
 
-    def test_chain(self) -> None: 
+    def test_chain(self) -> None:
         edges = [["a", "b"], ["b", "c"], ["c", "d"]]
 
         self.check_valid_tsort(edges, tsort(edges))
@@ -31,7 +31,7 @@ class Tests(unittest.TestCase):
         edges = [["a", "c"], ["b", "c"]]
 
         self.check_valid_tsort(edges, tsort(edges))
-        
+
     def test_multiple_dependencies(self) -> None:
         edges = [["a", "d"], ["b", "d"], ["c", "d"]]
 

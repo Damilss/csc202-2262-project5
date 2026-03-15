@@ -31,7 +31,6 @@ def tsort(edge_list: list[list[str]]) -> list[str]:
             if in_degrees[sub_vertex] == 0:
                 stack.append(sub_vertex)
 
-
     if len(result) != len(verticies):
         raise ValueError("input contains a cycle")
 

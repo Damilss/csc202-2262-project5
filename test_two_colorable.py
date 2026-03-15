@@ -4,9 +4,6 @@ from two_colorable import is_two_colorable
 
 
 class Tests(unittest.TestCase):
-    def test_empty_graph(self) -> None:
-        edges = []
-    
     def test_simple(self) -> None:
         edges = [["v1", "v2"]]
 

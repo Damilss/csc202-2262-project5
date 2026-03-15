@@ -1,5 +1,6 @@
 from collections import defaultdict, deque
 
+
 def is_two_colorable(edge_list: list[list[str]]) -> bool:
     graph = defaultdict(list)
     vertices = set()
